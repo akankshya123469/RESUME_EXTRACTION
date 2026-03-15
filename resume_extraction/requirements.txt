@@ -1,0 +1,6 @@
+spacy
+pymupdf
+pytesseract
+pillow
+python-docx
+gdown
