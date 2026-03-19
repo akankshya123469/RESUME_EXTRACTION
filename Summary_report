@@ -1,0 +1,44 @@
+### Resume Entity Extraction – Testing Summary Report
+
+The developed pipeline was tested on multiple types of input sources to ensure flexibility and robustness.
+
+### 1. Input Types Tested
+
+• Text-based PDF Resume
+• Scanned PDF Resume (OCR-based extraction)
+• DOCX Resume
+• Direct Text Input
+• LinkedIn Profile URL (public profiles)
+
+---
+
+### 2. Observations
+
+• Text-based PDFs were processed accurately using PyMuPDF
+• Scanned PDFs were successfully handled using OCR (Tesseract)
+• DOCX parsing worked correctly with structured text extraction
+• Direct text input produced the most accurate results
+• LinkedIn extraction worked partially due to platform restrictions
+
+---
+
+### 3. Challenges Faced
+
+• Noise in skill extraction due to absence of domain-specific filtering
+• LinkedIn scraping limitations (authentication & rate limits)
+• OCR accuracy depends on image quality
+
+---
+
+### 4. Conclusion
+
+The pipeline successfully supports multiple input formats and produces structured JSON output.
+A hybrid approach using NLP + rule-based extraction was used to ensure flexibility without hardcoding domain-specific skills.
+
+---
+
+### 5. Future Improvements
+
+• Improve skill extraction using better NLP filtering
+• Use advanced pretrained NER models for higher accuracy
+• Integrate official APIs for LinkedIn data (if available)
